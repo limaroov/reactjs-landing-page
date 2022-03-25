@@ -23,80 +23,80 @@ const Footer = ({ onClick }) => {
           <ul>
             <li className="ul_title">product</li>
             <li>
-              <a href="#">connections</a>
+              <a href="/">connections</a>
             </li>
             <li>
-              <a href="#">protocols</a>
+              <a href="/">protocols</a>
             </li>
             <li>
-              <a href="#">personas</a>
+              <a href="/">personas</a>
             </li>
             <li>
-              <a href="#">integrations</a>
+              <a href="/">integrations</a>
             </li>
             <li>
-              <a href="#">catalog</a>
+              <a href="/">catalog</a>
             </li>
             <li>
-              <a href="#">pricing</a>
+              <a href="/">pricing</a>
             </li>
             <li>
-              <a href="#">security</a>
+              <a href="/">security</a>
             </li>
             <li>
-              <a href="#">GDPR</a>
+              <a href="/">GDPR</a>
             </li>
           </ul>
           <ul>
             <li className="ul_title">for developers</li>
             <li>
-              <a href="#">Docs</a>
+              <a href="/">Docs</a>
             </li>
             <li>
-              <a href="#">api</a>
+              <a href="/">api</a>
             </li>
             <li>
-              <a href="#">open source</a>
+              <a href="/">open source</a>
             </li>
             <li>
-              <a href="#">engineering team</a>
+              <a href="/">engineering team</a>
             </li>
           </ul>
           <ul>
             <li className="ul_title">company</li>
             <li>
-              <a href="#">careers</a>
+              <a href="/">careers</a>
             </li>
             <li>
-              <a href="#">blog</a>
+              <a href="/">blog</a>
             </li>
             <li>
-              <a href="#">press</a>
+              <a href="/">press</a>
             </li>
           </ul>
 
           <ul>
             <li className="ul_title">support</li>
             <li>
-              <a href="#">help center</a>
+              <a href="/">help center</a>
             </li>
             <li>
-              <a href="#">contact us</a>
+              <a href="/">contact us</a>
             </li>
             <li>
-              <a href="#">security</a>
+              <a href="/">security</a>
             </li>
             <li>
-              <a href="#">bulletins</a>
+              <a href="/">bulletins</a>
             </li>
             <li>
-              <a href="#">documentation</a>
+              <a href="/">documentation</a>
             </li>
             <li>
-              <a href="#">partner</a>
+              <a href="/">partner</a>
             </li>
             <li>
-              <a href="#">portal</a>
+              <a href="/">portal</a>
             </li>
           </ul>
 

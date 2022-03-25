@@ -1,20 +1,20 @@
 const navlinks = [
   {
     title: "about",
-    href: "#about",
+    href: "/",
     subLinks: [],
   },
   {
     title: "pricing",
-    href: "#pricing",
+    href: "/",
   },
   {
     title: "contact us",
-    href: "#contact",
+    href: "/",
   },
   {
     title: "login",
-    href: "#login",
+    href: "/",
   },
 ];
 

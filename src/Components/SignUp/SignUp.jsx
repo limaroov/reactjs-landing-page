@@ -27,7 +27,7 @@ const SignUp = () => {
       </StartButton>
       <div className="signIn">
         <SectionParagraph>Already have an account? </SectionParagraph>
-        <a href="#">Login</a>
+        <a href="/">Login</a>
       </div>
     </SignUpContainer>
   );
