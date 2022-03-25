@@ -4,6 +4,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import navlinks from "../../data/navLinks";
 import PurpleButton from "../PurpleButton/PurpleButton";
 
+import Bounce from "react-reveal/Bounce";
+
 const Sidebar = ({ show, setShowSidebar }) => {
   const hideSidebar = () => {
     setShowSidebar(false);
@@ -17,9 +19,11 @@ const Sidebar = ({ show, setShowSidebar }) => {
       <NavLinks>
         {navlinks.map((item, index) => {
           return (
-            <li key={index}>
-              <a href={item.href}>{item.title}</a>
-            </li>
+            <Bounce duration={++index * 600} right>
+              <li key={index}>
+                <a href={item.href}>{item.title}</a>
+              </li>
+            </Bounce>
           );
         })}
       </NavLinks>

@@ -10,37 +10,45 @@ import reviewProfile from "../../ui_attachments/images/review-profile.jpg";
 
 import brands from "../../data/brands";
 
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+
 const Review = ({ onClick }) => {
   return (
     <ReviewContainer onClick={onClick}>
       <Container className="container">
         <SectionParagraph center small>
-          "What I love about Qubly is the easy way we can collaborate even if
-          there is a lot of people involved in the process"
+          <Fade bottom>
+            "What I love about Qubly is the easy way we can collaborate even if
+            there is a lot of people involved in the process"
+          </Fade>
         </SectionParagraph>
-
-        <img src={reviewProfile} alt="" />
+        <Zoom bottom>
+          <img src={reviewProfile} alt="" />
+        </Zoom>
         <SectionTitle xsmall bold center margin capitalize>
-          guillaume cabane
+          <Fade bottom>guillaume cabane</Fade>
         </SectionTitle>
         <SectionTitle xsmall bold center capitalize>
-          CTO @ bigSpring
+          <Fade bottom>CTO @ bigSpring</Fade>
         </SectionTitle>
         <Brands>
           {brands.map((brand, index) => {
             return (
-              <Brand key={index}>
-                <img src={brand.logo} alt={brand.text} />
-                {index === 1 ? (
-                  <SectionTitle capitalize bold small>
-                    {brand.text}
-                  </SectionTitle>
-                ) : (
-                  <SectionTitle lowOpacity capitalize bold small>
-                    {brand.text}
-                  </SectionTitle>
-                )}
-              </Brand>
+              <Fade right duration={++index * 500}>
+                <Brand key={index}>
+                  <img src={brand.logo} alt={brand.text} />
+                  {index === 1 ? (
+                    <SectionTitle capitalize bold small>
+                      {brand.text}
+                    </SectionTitle>
+                  ) : (
+                    <SectionTitle lowOpacity capitalize bold small>
+                      {brand.text}
+                    </SectionTitle>
+                  )}
+                </Brand>
+              </Fade>
             );
           })}
         </Brands>
