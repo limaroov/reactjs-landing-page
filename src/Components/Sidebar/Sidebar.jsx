@@ -17,17 +17,25 @@ const Sidebar = ({ show, setShowSidebar }) => {
         <CloseIcon className="icon" onClick={hideSidebar} />
       </div>
       <NavLinks>
-        {navlinks.map((item, index) => {
-          return (
-            <Bounce duration={++index * 600} right>
-              <li key={index}>
-                <a href={item.href}>{item.title}</a>
-              </li>
-            </Bounce>
-          );
-        })}
+        {show &&
+          navlinks.map((item, index) => {
+            return (
+              <Bounce duration={++index * 500} right>
+                <li key={index}>
+                  <a href={item.href}>{item.title}</a>
+                </li>
+              </Bounce>
+            );
+          })}
       </NavLinks>
-      <PurpleButton title="start free trial" transparent border width="100%" />
+      <Bounce bottom>
+        <PurpleButton
+          title="start free trial"
+          transparent
+          border
+          width="100%"
+        />
+      </Bounce>
     </SidebarContainer>
   );
 };
@@ -80,6 +88,7 @@ const SidebarContainer = styled.aside`
     display: flex;
     justify-content: flex-end;
     margin: 0 2rem;
+    cursor: pointer;
 
     .icon {
       font-size: 3rem;

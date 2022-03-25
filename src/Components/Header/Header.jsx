@@ -86,6 +86,7 @@ const HeaderContainer = styled.header`
         font-size: 3rem;
         margin: 0 2rem;
         display: none;
+        cursor: pointer;
 
         @media screen and (max-width: 1000px) {
           & {
