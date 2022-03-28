@@ -1,5 +1,5 @@
 
-The deployed version of project
+The deployed version of project : https://limar-react-landing-page.netlify.app/
 
 
 # Getting Started with Create React App
